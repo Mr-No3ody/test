@@ -1,0 +1,59 @@
+version: 3.0.1
+apkFileName: base.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 24
+  targetSdkVersion: 36
+versionInfo:
+  versionCode: 1261030162
+  versionName: 7.19.0
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- dex
+- jpg
+- mp3
+- png
+- wav
+- webp
+- META-INF/com.google.android.material_material.version
+- META-INF/com.google.dagger_dagger.version
+- META-INF/kotlinx_coroutines_android.version
+- META-INF/kotlinx_coroutines_core.version
+- META-INF/kotlinx_coroutines_play_services.version
+- META-INF/services/kotlinx.coroutines.CoroutineExceptionHandler
+- META-INF/services/kotlinx.coroutines.internal.MainDispatcherFactory
+- assets/com/appsflyer/internal/4c4e45778d3c5f29c-
+- assets/com/appsflyer/internal/82977a2793246bcb-
+- assets/com/appsflyer/internal/dcb585e30175cfe4a-
+- assets/com/appsflyer/internal/e9d93abdefcb7f16d-
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- assets/index.android.bundle
+- okhttp3/internal/publicsuffix/publicsuffixes.gz
+- res/raw/app_pages_kekepay_assets_cv_anim_signup_success.lottie
+- res/raw/app_pages_kekepay_assets_cv_result_success.lottie
+- res/raw/core_transfer_result_payments.lottie
+- res/raw/cs_cash_loading.lottie
+- res/raw/cv_anim_signup_success.lottie
+- res/raw/cv_animation_loading.lottie
+- res/raw/cv_animation_loading_dark.lottie
+- res/raw/cv_result_success.lottie
+- res/raw/fb_result_success.lottie
+- res/raw/lib_liveness_blink.lottie
+- res/raw/lib_liveness_head_nod.lottie
+- res/raw/lib_liveness_head_shake.lottie
+- res/raw/lib_liveness_mouth_open.lottie
+- res/raw/lib_liveness_move_in.lottie
+- res/raw/lib_ui_animation_loading.lottie
+- res/raw/main_saving_task_lion.lottie
+- res/raw/mm_open_box.lottie
+- res/raw/premium_home.lottie
+- res/raw/qt_to_claim_dark.lottie
+- res/raw/qt_to_claim_normal.lottie
+- res/raw/sm_searching.lottie
+- res/raw/trial_premium_home.lottie
+- version.txt

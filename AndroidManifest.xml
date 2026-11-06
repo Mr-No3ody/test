@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.transsnet.palmpay" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent>
+        <package android:name="com.scorpio.securitycom"/>
+        <package android:name="com.flexi.cash"/>
+        <intent>
+            <action android:name="android.media.action.VIDEO_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="org.chromium.intent.action.PAY"/>
+        </intent>
+        <intent>
+            <action android:name="org.chromium.intent.action.IS_READY_TO_PAY"/>
+        </intent>
+        <intent>
+            <action android:name="org.chromium.intent.action.UPDATE_PAYMENT_DETAILS"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.samsung.android.mapsagent"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.xianyu.gaotong"/>
+        <package android:name="virtual.camera.app"/>
+        <package android:name="com.example.vcam"/>
+        <package android:name="com.wangyiheng.vcamsx"/>
+        <package android:name="com.telegram.a1064"/>
+        <package android:name="com.pedia.vcamsx"/>
+        <package android:name="com.paint.yssh"/>
+        <package android:name="com.youdao.youdaomath"/>
+        <package android:name="com.yztc.studio.plugin"/>
+        <package android:name="com.variable.apkhook"/>
+        <package android:name="cn.porsche.app"/>
+        <package android:name="com.tsng.hidemyapplist"/>
+        <package android:name="me.weishu.kernelsu"/>
+        <package android:name="com.topjohnwu.magisk"/>
+        <package android:name="me.bmax.apatch"/>
+        <package android:name="io.github.huskydg.magisk"/>
+        <package android:name="com.rifsxd.ksunext"/>
+        <package android:name="com.sukisu.ultra"/>
+        <package android:name="me.garfieldhan.apatch.next"/>
+        <package android:name="icu.nullptr.nativetest"/>
+        <package android:name="io.github.vvb2060.mahoshojo"/>
+        <package android:name="com.byxiaorun.detector"/>
+        <package android:name="com.netease.cloudmusic"/>
+        <package android:name="com.andorid.music"/>
+        <package android:name="com.android.music"/>
+        <package android:name="com.kugou.android"/>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:maxSdkVersion="23" android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.DETECT_SCREEN_CAPTURE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <permission android:name="com.transsnet.palmpay.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.transsnet.palmpay.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/appsflyer_data_extraction_rules" android:enableOnBackInvokedCallback="false" android:extractNativeLibs="true" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:icon="@mipmap/ic_launcher" android:label="@string/pay_app_name" android:largeHeap="true" android:name="com.transsnet.palmpay.base.ShellApplication" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="false" android:theme="@style/AppTheme" android:usesCleartextTraffic="false">
+        <profileable android:shell="false"/>
+        <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="false"/>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="@bool/core_enable_ga_auto_screen"/>
+        <meta-data android:name="experiment_app_start_ttid" android:value="false"/>
+        <meta-data android:name="com.appsflyer.FacebookApplicationId" android:value="\373598973128739"/>
+        <activity android:configChanges="orientation|uiMode" android:exported="true" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.SplashActivity" android:theme="@style/MainSplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.transsnet.palmpay.splash" android:scheme="palmpay"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.com" android:pathPrefix="/al/splash" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="@string/growingio_url_scheme"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.intent.action.WIDGET_PAY_BILLS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.intent.action.WIDGET_TOPUP_AIRTIME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.intent.action.WIDGET_BUNDLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.home.finance"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.intent.action.TRANS_TO_BANK_ACCOUNT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.intent.action.TRANS_TO_PALMPAY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.notch_support" android:value="true"/>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode" android:exported="false" android:name="com.transsnet.mtn.sdk.ui.GateActivity" android:theme="@style/DialogActivityTheme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.ui.activity.settings.AccountNumberActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <meta-data android:name="design_width_in_dp" android:value="360"/>
+        <meta-data android:name="design_height_in_dp" android:value="640"/>
+        <meta-data android:name="android.max_aspect" android:value="2.5"/>
+        <receiver android:exported="false" android:label="@string/core_top_up_airtime" android:name="com.transsnet.palmpay.ui.widget.TopUpAirtimeAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info_topup_airtime"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/main_pay_bills" android:name="com.transsnet.palmpay.ui.widget.PayBillsAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info_pay_bills"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/core_bank_transfer" android:name="com.transsnet.palmpay.ui.widget.SendMoneyAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info_send_money"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/core_bundle" android:name="com.transsnet.palmpay.ui.widget.DataBundleAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info_data_bundle"/>
+        </receiver>
+        <activity android:configChanges="uiMode" android:exported="true" android:hardwareAccelerated="@bool/core_enable_hw_accelerated_2" android:launchMode="singleTask" android:name="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/MainHomeTheme">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.com" android:pathPrefix="/al/home" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.com" android:pathPrefix="/al/ReWard" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.com" android:pathPrefix="/al/cBE" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.com" android:pathPrefix="/al/fLI" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.settings.SettingsActivity" android:theme="@style/SettingsTheme"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.settings.SubSettingsActivity" android:theme="@style/SettingsTheme"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.settings.PersonalActivityV2" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.settings.AboutActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.bankcard.SetRepaymentDefaultCardActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.PalmPayStatementActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.PalmZoneRewardsActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.message.NotificationsActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.notification.payment"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.notification.common"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.notification.news"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.notification"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.message.NotificationListV2Activity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.notification.all"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleInstance" android:name="com.transsnet.palmpay.ui.activity.UpdateActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.RateAppActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.points.PointStatementActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.detail.OfflineQrPaymenttDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.InviteeListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.qr.QrcodeShareActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTask" android:name="com.transsnet.palmpay.ui.activity.TransactionHistoryActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.TransactionHistoryDownloadActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.TransactionHistoryDownloadFilterActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.TransactionHistoryDownloadFilterTypeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.bankcard.BankCardAndAccountActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.bankcard.AddCardCompleteActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.MerchantPaymentListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.qr.PayMoneyToPalmPayBusinessResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.detail.MerchantOrderDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.detail.CommissionDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.autodecuct.AutoDeductOrderDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.thirdpartymerchant.ThirdPartyMerchantListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.thirdpartymerchant.ThirdPartyMerchantActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.thirdpartymerchant.ThirdPartyMerchantPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.thirdpartymerchant.TPMerchantPaymentResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.thirdpartymerchant.ThirdPartyMerchantOrderDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.points.PointStatementDetailActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.detail.RefundStatementDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.detail.DisbursementOrderDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.PendingVoucherListActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.coupon.CouponListActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.echat.EchatActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.detail.InterBankCashInOrderDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:label="@string/main_receive_money_label" android:launchMode="singleTask" android:name="com.transsnet.palmpay.ui.activity.qr.QRCodeReceiveActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.qr.QrcodePayMoneyOrderDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.qr.QrcodePayMoneySuccessActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.qr.PayMoneyToPartnerPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.qr.PayMoneyToPalmPayBusinessPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.PayMerchantResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.AllFuncationActivityV2" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.qr.QrCodeActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.bankcard.BankCardDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.bankcard.BankAccountDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.CoinRainActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTask" android:name="com.transsnet.palmpay.ui.activity.GetCoinRewardsActivity" android:theme="@style/TransScreenTheme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.LifeBillsHomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.detail.BuyEarlyRefundDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.EarlyRefundPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.BuyEarlyRefundResultActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.BillPaymentEditActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.MyAssetsActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.me.MeBalanceAccountActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.me.MeBalanceStatementActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.palmsafe.PalmSafeScanFaceActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/TransScreenTheme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.palmsafe.PalmSafeDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.settings.SetPaymentMethodActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.ui.activity.RedirectOrderDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.ui.activity.welcome.WelcomeBackActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.ui.activity.welcome.WelcomeNewUserActivity" android:theme="@style/ImmersionTheme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.ui.activity.coupon.CouponPackageResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.paycode.PayCodeTransactionResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.paycode.PayCodeOrderDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.settings.DarkModeSettingActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:launchMode="singleInstance" android:name="com.transsnet.palmpay.ui.activity.thirdpartymerchant.MerchantPaymentActivity" android:theme="@style/Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="palmpay"/>
+                <data android:host="merchant"/>
+                <data android:path="/pay"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="pay"/>
+                <data android:host="merchant"/>
+                <data android:path="/payment"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="palmpayapp"/>
+                <data android:host="merchant"/>
+                <data android:path="/payment"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.com" android:pathPrefix="/al/pay" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.ui.activity.thirdpartymerchant.MerchantPaymentPreviewActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.ui.activity.test.PhoneInformationActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.minor.MinorAccountDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.minor.MinorAccountListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.minor.MinorAccountHistoryListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.minor.MinorAccountResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.ui.activity.minor.MinorGuardianManagerActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.core.ui.activity.PPRNActivity" android:theme="@style/CoreReactNativeTheme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.core.ui.activity.CoreReceiptShareActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.CoreReceiptPrintActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.CoreTransactionReceiptActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.InputCardPinActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.core.ui.activity.BindNewBankAccountActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.CoreUssdListActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.RiskControlVerifyActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.core.ui.activity.CoreCommentActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.core.ui.activity.AddNewBankAccountActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.core.ui.activity.AddBankCardAccountActivity" android:theme="@style/LightBaseTheme.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.core.ui.activity.AddNewCardWithPaymentActivity" android:theme="@style/LightBaseTheme.NoActionBar" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.ExpressageInfoActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.CoreRouterActivity" android:theme="@style/Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.transsnet.palmpay.link" android:scheme="palmpay"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.com" android:pathPrefix="/al/link" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.onelink.me" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="mt.tb" android:scheme="palmpay"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.core.ui.activity.VerifyRealNameAlertActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.core.ui.activity.MapsActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:hardwareAccelerated="true" android:name="com.transsnet.palmpay.core.web.PWebActivity" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.com" android:pathPrefix="/al/WB" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleInstance" android:name="com.transsnet.palmpay.core.ui.activity.CommonClaimRewardActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.account.ui.activity.KycUploadPhotoGuideActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.account.ui.activity.AddUserExtraInfoEntryActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.account.ui.activity.VerifyAccountActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.account.ui.activity.AddUserExtraInfoResultActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.account.ui.activity.quota.Tier3QuotaApplyResultActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.account.ui.activity.quota.Tier3QuotaManageActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.VerifyAccountHistoryActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.VerifyAccountFaceActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.account.ui.activity.ResetPinActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.account.ui.activity.SetSafeLockPinActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|density|layoutDirection|fontScale" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated_2" android:launchMode="singleTask" android:name="com.transsnet.palmpay.account.ui.activity.LogInActivity" android:screenOrientation="portrait" android:theme="@style/AcBaseTheme2" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.account.ui.activity.AuthenticationActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.account.ui.activity.ChangeMobileActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.account.ui.activity.SetUserPhotoActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.account.ui.activity.PreviewPdfActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|density|layoutDirection|fontScale" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated_2" android:launchMode="singleTask" android:name="com.transsnet.palmpay.account.ui.activity.SignUpActivity" android:screenOrientation="portrait" android:theme="@style/AcBaseTheme2" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity-alias android:name="com.transsnet.palmpay.account.ui.activity.SignUpActivityForSplash" android:targetActivity="com.transsnet.palmpay.account.ui.activity.SignUpActivity" android:theme="@style/AcBaseTheme3"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.PalmPayLevelUpTier3V2Activity" android:theme="@style/LightBaseTheme.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.IdentityVerificationActivity" android:theme="@style/LightBaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.VerificationPatternPinActivity" android:theme="@style/LightBaseTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.CHECK_PATTERN_PIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated_2" android:launchMode="singleTop" android:name="com.transsnet.palmpay.account.ui.activity.PinSafeWithPatternActivity" android:theme="@style/LightBaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.SAFE_PATTERN_PIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.SetPatternPinActivity" android:theme="@style/LightBaseTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.SET_PATTERN_PIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.SetTouchIdActivity"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.AccountActivateSuccessActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.SetTouchIdV2Activity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.AskEnableTouchIdActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.AskApplyBalanceActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.PalmPayLevelUpTier3EntryActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.account.ui.activity.VerifyRealNameActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.VerifyRealNameResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.EditUserNameActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.SetNewPinV2Activity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.SetNewPswActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.kotlin.ui.activity.ResetPinVerificationActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.kotlin.ui.activity.SelectResetPinVerifyTypeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.transsnet.palmpay.account.ui.activity.PalmPayLevelUp3Activity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.PalmPayLevelV2Activity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.PalmPayTier3PendingActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.PalmPayTier3ApplicationDetailActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.device.ui.activity.DeviceDetail2Activity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.device.ui.activity.DeviceListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.SignUpSuccessActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.AuthenticationOtpActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.PrivacyAccountNoSettingsActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.EnableCashBoxAutoSaveActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.AddGuardianActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.account.ui.activity.GuardianApproveActivity" android:theme="@style/Translucent" android:windowSoftInputMode="adjustResize"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.transsnet.palmpay.account.receiver.SmsReceiver" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:name="com.transsnet.palmpay.account.service.LoginInfoService">
+            <intent-filter>
+                <action android:name="android.intent.action.LoginInfoService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.cash_in.ui.activity.WithdrawInputAmountRedirectActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:label="Result" android:name="com.transsnet.palmpay.cash_in.ui.activity.FundResultActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:label="Result" android:name="com.transsnet.palmpay.cash_in.ui.activity.WithdrawResultActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:label="Recharge" android:launchMode="singleTask" android:name="com.transsnet.palmpay.cash_in.ui.activity.RechargeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:label="Withdraw" android:launchMode="singleTop" android:name="com.transsnet.palmpay.cash_in.ui.activity.WithdrawHomeActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:label="Withdraw" android:launchMode="singleTop" android:name="com.transsnet.palmpay.cash_in.ui.activity.WithdrawQueryAccountListActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.cash_in.ui.activity.RecordListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.cash_in.ui.activity.ConfirmAndPayWithdrawOrderActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.cash_in.ui.activity.RecordDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/LightBaseTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.ORDER_DETAIL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="palmpay"/>
+                <data android:host="cash-inout"/>
+                <data android:path="/bill-detail"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.cash_in.ui.activity.instruction.AddMoneyHomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.cash_in.ui.activity.instruction.InterBankCashInInstructionActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.cash_in.ui.activity.instruction.InterBankCashInInstructionDetailActivity" android:theme="@style/TransFullScreenTheme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:label="RechargeUSSD" android:launchMode="singleTop" android:name="com.transsnet.palmpay.cash_in.ui.activity.RechargeUSSDResultActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.cash_in.ui.activity.WithdrawAgentPaymentResultActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.cash_in.ui.activity.WithdrawAgentTradeRecordDetailActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.cash_in.ui.activity.CashInReceiptActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.cash_in.ui.activity.BindBankCardResultActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.teller.ui.activity.WaterHomeActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar.New"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.teller.ui.activity.BillerSearchActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.teller.ui.activity.WaecHomeActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar.New"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.teller.ui.activity.JambHomeActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar.New"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.teller.ui.activity.ElectricityHomeActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.teller.ui.activity.TvHomeActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.teller.ui.activity.InsuranceHomeActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:name="com.transsnet.palmpay.teller.ui.activity.InternetHomeActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.teller.ui.activity.QuickTellerHistoryActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTask" android:name="com.transsnet.palmpay.teller.ui.activity.BeneficiariesActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.teller.ui.activity.BillPaymentOrderDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.teller.ui.activity.BettingBillDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.betting.ui.activity.BettingWithdrawConfirmPaymentOrderActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTask" android:name="com.transsnet.palmpay.databundle.ui.activity.BuyBundleHomePageActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.com" android:pathPrefix="/al/dTA" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.teller.ui.activity.BillPaymentHomeActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.teller.ui.activity.TvPreCheckActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.teller.ui.activity.EditBeneficiaryActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.betting.ui.activity.BettingHomeActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.betting.ui.activity.BettingWithdrawHomeActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.airtime.ui.DownTimeTransactionResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.airtime.ui.ConfirmAirtimeDownTimeActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:hardwareAccelerated="@bool/core_enable_hw_accelerated_2" android:label="Buy Airtime on PalmPay" android:launchMode="singleTop" android:name="com.transsnet.palmpay.airtime.ui.TopupAirtimeActivity" android:theme="@style/BaseTheme.NoActionBar.New" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <data android:mimeType="text/plain"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.com" android:pathPrefix="/al/aTE" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.r2c.ui.activity.Recharge2CashHomeActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.r2c.ui.activity.Recharge2CashRecordActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.r2c.ui.activity.Recharge2CashLoginActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.r2c.ui.activity.Recharge2CashDetailActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.r2c.ui.activity.CashierRecharge2CashPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.airtime.ui.TopUpRecordActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.airtime.ui.TopupResultActivityV2" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.teller.ui.activity.BillerTransactionResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.teller.ui.activity.AgentOrderDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.airtime.ui.AirtimeBillDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.airtime.ui.ScheduleTopUpHomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.airtime.ui.USSDTopUpHomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.airtime.ui.ScheduleTopUpTaskManagerActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.airtime.ui.ScheduleTopUpTaskStatusActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.airtime.ui.AutoTopupOverlayActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.teller.ui.activity.CashierBillPaymentPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.databundle.ui.activity.CashierDataBundlePreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.airtime.ui.CashierAirtimePreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.airtime.ui.CashierGroupPurchasePreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.betting.ui.activity.CashierBettingPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.r2c.ui.activity.Recharge2CashResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.databundle.ui.activity.BuyFlashSaleActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.teller.ui.activity.BillerRelayPageActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.betting.ui.activity.BettingHistoryActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.databundle.ui.activity.DataBundleAutoRenewTaskStatusActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.databundle.ui.activity.DataBundleAutoTopupOverlayActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.betting.ui.activity.BettingAutoRenewOverlayActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.airtime.ui.AirtimeGroupPurchaseResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.betting.ui.activity.BettingQuickBetWebActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.betting.ui.activity.BettingQuickBetCreateOrderActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.betting.ui.activity.BettingQuickBetTranscationResultActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.PalmPayContactsListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.PalmPayNewContactsListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.ContactProfileActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.AddContactActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.ContactMenuActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.SetContactRemarkActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.ContactSearchOrScanResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.LocalPalmPayContactsListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.PersonalQRCodeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.PalmPayContactsSearchActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.AllContactsActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.CloseContactsActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.AllContactsSearchActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.LocalContactsListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.EditCloseContactsActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.PalmPayLinkFavesFriendsActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.AddNewFaveActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.LinkFavePersonalInfoActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.LinkFaveNoticeListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.contacts.ui.activity.FindInviteFriendsActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:exported="@bool/core_export_activity" android:label="@string/sm_kk_passenger_title" android:name="com.transsnet.palmpay.send_money.ui.activity.kkcar.KkCarHostActivity" android:screenOrientation="portrait" android:theme="@style/sm_base_theme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:label="@string/sm_set_money_label" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.SetAmountActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="uiMode" android:label="@string/sm_qrcode_san_label" android:launchMode="singleTask" android:name="com.transsnet.palmpay.send_money.ui.activity.QrcodeScanActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.topp.RequestMoneyResultActivity" android:theme="@style/sm_base_theme"/>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.MoneyTransferRecordActivity" android:theme="@style/sm_base_theme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.send_money.ui.activity.TradeRecordDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/sm_base_theme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.send_money.ui.activity.AgentTradeRecordDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/sm_base_theme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.B2CTradeRecordDetailActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.CollectMoneyResultActivity" android:theme="@style/sm_base_theme"/>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.topp.ReceiveMoneyResultActivity" android:theme="@style/sm_base_theme"/>
+        <activity android:configChanges="uiMode" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.CashierTransferPreviewActivity" android:theme="@style/Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.send_money.ui.activity.WithdrawInputAmountActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.send_money.ui.activity.PayShopInputAmountActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.CashierWithdrawAgentPreviewActivity" android:theme="@style/Translucent" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.CashierPayShopPreviewActivity" android:theme="@style/Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.topp.TransferToPalmPayHomeActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.com" android:pathPrefix="/al/tTR" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:label="@string/sm_set_money_label" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.SetAmountActivity1" android:theme="@style/LightBaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.send_money.ui.activity.topp.InputMobileActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.TransferToMobileActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.SelectBankActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.tobank.SelectBankForToBankActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.AddBeneficiaryActivity" android:theme="@style/sm_base_theme"/>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.TransReceiptActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:label="Transfer with PalmPay" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.tobank.TransferToBankAccountActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <data android:mimeType="text/plain"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.tobank.TransferToBankInputAmountActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.topp.PersonalHomePageActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.topp.RequestPermissionDetailsActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.tobank.BankAccountBeneficiaryActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.pay_me.PayMeActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.pay_me.PayMeMerchantActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.NibssMoneyInRecordDetailActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.CompensationDetailActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.schedule_transfer.ScheduleTransferHomeActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.schedule_transfer.ScheduleTransferPaymentSelectActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.schedule_transfer.ScheduleTransferCreateActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.schedule_transfer.ScheduleTransferCreateV2Activity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.schedule_transfer.ScheduleTransferOrderDetailActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.schedule_transfer.ScheduleTransferCreateResultActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.st4bu.ScheduleTransferForBankUnstableHomeActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.st4bu.ScheduleTransferForBankUnstableDetailActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.st4bu.ScheduleTransferForBankUnstableResultActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.st4bu.ScheduleTransferForBankUnstableOrderListActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.TransferResultActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.TransferToCommonAccountActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTask" android:name="com.transsnet.palmpay.send_money.ui.activity.topp.TransferToPalmPayInputAmountActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.pay_me.MoneyTransferRecordListActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.tobank.CreateBankShortcutActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.topp.TransferToPalmPayContactActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.st4bu.ScheduleTransferForBankUnstableBeneficiariesListActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.transfer_via_ussd.TransferViaUssdActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.settings.TransferSettingsActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.settings.TransferLimitSettingsActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.send_money.ui.activity.settings.TransferNotificationSettingsActivity" android:theme="@style/sm_base_theme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.PayShopInputAmountRedirectActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.credit.ui.activity.LoanDeepLinkEntryActivity" android:theme="@style/Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="loan.repay" android:scheme="palmpay"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="loan.borrow" android:scheme="palmpay"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcApplyLiteActivity" android:theme="@style/Translucent"/>
+        <service android:exported="false" android:name="com.transsnet.palmpay.credit.service.OkCardCollectDeviceInfoService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcGetInstallmentCreditActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.LoanLocationRequestPermissionActivity" android:theme="@style/Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.credit.ui.activity.transferbyloan.TransferByLoanActivity" android:theme="@style/Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcMainActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="credit_score" android:path="/flexi_main" android:scheme="palmpay"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcApplyResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcBillActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcBillDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcBillHistoryActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcRepaidListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcTotalAmountActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcIncreaseRecordActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcRepayActivity" android:theme="@style/CsMobileInstallmentStandaloneTheme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcRePayPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcRepayOrderDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcRepayResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcAuthActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcFeedbackActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcReferEarnActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcReferEarnHistoryActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcFeedbackDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcFeedbackListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTask" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcProtocolActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcContactActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLSecondMainActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcPhoneTempActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcSettingActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcAutoRepaymentExplainActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcRepaymentDateActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcPromotionActivity" android:theme="@style/TransFullScreenTheme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLBorrowActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLBorrowResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTask" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLMainActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLPermissionActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLRepaymentActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLRepaymentPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLRecordActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLBillDetailActivity" android:theme="@style/CsMobileInstallmentStandaloneTheme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLBillDetailMoreActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLInterestDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLAutoRepaymentExplainActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLTakePhotoGuideActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLTakePhotoActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLOpenResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLRepaymentResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLBorrowPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcOtpVerifyActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcALLVerifyActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcMediaActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcInviteActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcStartApplyActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcRepayExtendActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcRepayExtendPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.InputAmountActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcAllBillActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcOfflineInstallmentDetailActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcInstallmentBillDetailActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLOcBillActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLRepayOrderDetailActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcRepayOrderDetailInPalmPayActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLInstallmentDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLRepaymentListActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLTotalOverdueActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLPenaltyPeriodActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLUpgradeActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcInstallmentRepayActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTask" android:name="com.transsnet.palmpay.credit.ui.activity.LoanHomeActivity" android:theme="@style/ImmersionTheme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.SearchMIDActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcMTNLoginActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:name="com.transsnet.palmpay.credit.ui.activity.PayShopHomeActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="credit_score" android:path="/pay_shop" android:scheme="palmpay"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.PastShopListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcBillInstallmentActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcOverpaymentActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcTotalBillActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcSelectContactsActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcALiFaceGuideActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLRepaymentExtendActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLRepaymentExtendPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLRepaymentExtendResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcGoldCardUpgradeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcGoldCardUpgradeBreakActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTask" android:name="com.transsnet.palmpay.credit.ui.activity.OcHomeMobileInstalmentStandaloneActivity" android:screenOrientation="portrait" android:theme="@style/CsMobileInstallmentStandaloneTheme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcRepaymentInfoActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.credit.ui.activity.PayShopPaymentPreviewActivity" android:theme="@style/Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.credit.ui.activity.PayShopPaymentResultActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.PayShopTradeRecordDetailActivity" android:parentActivityName="com.transsnet.palmpay.ui.activity.HomeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.credit.ui.activity.PayShopTransReceiptActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.RewardOrderDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcSetDefaultPayMethodActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.HowToUnfreezeActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcOneLoopActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcLastProtocolActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLLastProtocolActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLCreditManagementActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.MonoConnectActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.AliFaceActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.ClOpenAccountActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.okcard.OcKYCRouterActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLUpGradeInstallmentAccountActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.CLInstallmentUpGradeResultActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.credit.ui.activity.cashloan.UpgradeInstallmentTransParentActivity" android:screenOrientation="portrait" android:theme="@style/TransFullScreenTheme"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.managemoney.ui.activity.CreatePlanActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.managemoney.ui.activity.PlanDetailActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.managemoney.ui.activity.PlanBreakPreDetailActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTask" android:name="com.transsnet.palmpay.managemoney.ui.activity.UserFixedSavingActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.managemoney.ui.activity.TransactionHistoryActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.managemoney.ui.activity.DetailActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.FixedSavingPreviewActivity" android:theme="@style/Translucent" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.SavingAdvancePreviewActivity" android:theme="@style/Translucent" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.FixedSavingR2PreviewActivity" android:theme="@style/Translucent" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.PaybackDetailActivity" android:theme="@style/BaseTheme.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTask" android:name="com.transsnet.palmpay.managemoney.ui.activity.CashBoxDepositWithdrawActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.SelectStateActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTask" android:name="com.transsnet.palmpay.managemoney.ui.activity.CashBoxMainActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.CashBoxTransactionHistoryActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.TargetSavingsTransactionHistoryActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.FundTransactionHistoryActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.transsnet.palmpay.managemoney.ui.activity.CashBoxOrderResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.CashBoxPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.CashBoxOrderDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.FixedSavingOrderForBreakResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.CashBoxAutoSaveActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.CashBoxAutoSaveOperationActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.CashBoxCampaignMainActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.SpendSavePreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.managemoney.ui.activity.InsuranceTakePhotoActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.mall.ui.activity.MallPaymentOrderDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.mall.ui.activity.MallPhotoViewActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.mall.ui.activity.GrabOrderDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.p2pcash.ui.atm.NearbyAgent2Page" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.p2pcash.ui.atm.BookingDetailPage" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.p2pcash.ui.atm.ReasonForCancellationPage" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.p2pcash.ui.atm.BookingHistoryPage" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.p2pcash.ui.atm.TransactionDetailPage" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.p2pcash.ui.atm.CashierDeskPage" android:theme="@style/DialogActivityTheme"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.transsnet.palmpay.p2pcash.ui.atm.MapPage" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:name="com.transsnet.palmpay.p2pcash.ui.atm.BookingNotesPage" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.transsnet.palmpay.jara_packet.ui.activity.JaraCommissionDetailActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:launchMode="singleTop" android:name="com.transsnet.palmpay.jara_packet.ui.activity.ReferEarnHomePageActivity" android:theme="@style/BaseTheme.NoActionBar">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="palmpay.com" android:pathPrefix="/al/RE" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.transsnet.palmpay.jara_packet.ui.activity.ReferEarnHistoryActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.jara_packet.ui.activity.ReferEarnResolveActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.jara_packet.ui.activity.ReferEarnRankActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.jara_packet.ui.activity.ReferEarnCommentListActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:launchMode="singleTop" android:name="com.transsnet.palmpay.jara_packet.ui.activity.ReferEarnRewardDialogActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.transsnet.palmpay.service.PushMainService"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.transsnet.palmpay.service.PushSubService" android:process=":pp_push"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.transsnet.palmpay.service.PalmPayInstanceIdService" android:process=":pp_push">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:process=":pp_push">
+            <intent-filter android:priority="999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/core_str_map_key"/>
+        <meta-data android:name="PARTNER_CODE" android:value="cyjf"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/core_push_small"/>
+        <service android:exported="false" android:name="com.transsnet.palmpay.core.service.RequestContactService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.transsnet.palmpay.core.service.UpdateBadgeService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.transsnet.palmpay.core.service.CollectDeviceInfoService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.transsnet.palmpay.core.service.RequestContactDeleteService"/>
+        <provider android:authorities="com.transsnet.palmpay.file_provider" android:exported="false" android:grantUriPermissions="true" android:name="com.transsnet.palmpay.core.fileprovider.PalmPayFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/core_file_paths"/>
+        </provider>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.core.ui.activity.PayVerificationActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.FlexiPayOneClickOpenActivity" android:theme="@style/Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.transsnet.palmpay.core.ui.activity.CoreCommonResultActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:label="Result" android:name="com.transsnet.palmpay.core.ui.activity.HandleResultPayWithUSSDActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:label="Result" android:name="com.transsnet.palmpay.core.ui.activity.HandleResultPayWithUSSDByPushActivity" android:theme="@style/LightBaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.CoreNotificationEntryActivity" android:theme="@style/Translucent">
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.notification.click"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.USSDPayResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.CorePaymentPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.H5CorePreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.RNCorePreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.FinancialWithdrawalPreviewActivity" android:theme="@style/Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.CommonTransactionResultActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="@bool/core_export_activity" android:hardwareAccelerated="@bool/core_enable_hw_accelerated" android:name="com.transsnet.palmpay.core.ui.activity.UnsatisfiedLinkErrorActivity" android:process=":crash" android:theme="@style/TransFullScreenTheme"/>
+        <receiver android:exported="true" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.transsnet.palmpay.core.receiver.DismissNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.notification.dismiss"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.transsnet.palmpay.initprovider" android:exported="false" android:initOrder="100" android:name="com.transsnet.palmpay.core.provider.PalmPayInitProvider"/>
+        <provider android:authorities="com.transsnet.palmpay.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.WrapCrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.WrapFirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:configChanges="uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.flexibank.sdk.cashier.ui.activity.FlexiBankCashierCommonPreviewActivity" android:theme="@style/fb_Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:hardwareAccelerated="@bool/fb_enable_hw_accelerated" android:launchMode="singleTop" android:name="com.flexibank.sdk.cashier.ui.activity.FlexiBankPayVerificationActivity" android:theme="@style/fb_Translucent"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|density|layoutDirection|fontScale" android:exported="false" android:hardwareAccelerated="true" android:name="com.flexibank.sdk.core.web.FlexiBankPWebActivity" android:theme="@style/fb_LightBaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="com.palmpay.lib.webview.container.PPWebActivity" android:theme="@style/PPWebViewTheme"/>
+        <activity android:configChanges="uiMode" android:name="com.palmpay.lib.scanplus.ScanPlusActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:name="com.palmpay.lib.scanplus.ScanPlusFullActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
+        <service android:name="com.transsnet.adsdk.remote.RemoteDrawService" android:process=":webAd"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="face"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.palmpay.lib.liveness.ui.SelfieCaptureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Lib_liveness"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.palmpay.lib.liveness.ui.FaceCaptureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Lib_liveness"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.palmpay.lib.liveness.video.VideoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Lib_liveness"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.palmpay.lib.liveness.ui.LivenessActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Lib_liveness"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.palmpay.lib.liveness.v2.LivenessActivityV2" android:screenOrientation="portrait" android:theme="@style/Theme.Lib_liveness"/>
+        <provider android:authorities="com.transsnet.palmpay.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:configChanges="uiMode" android:name="com.masteratul.exceptionhandler.DefaultErrorScreen"/>
+        <service android:enabled="false" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:name="com.yalantis.ucrop.UCropMultipleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:multiprocess="true" android:name="com.transsnet.palmpay.util.PermissionUtils$PermissionActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="uiMode" android:name="mono.connect.widget.ConnectWidgetActivity"/>
+        <activity android:configChanges="uiMode" android:name="mono.connect.kit.ConnectKitActivity"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.transsnet.palmpay.photograph.PhotoPickerActivity" android:screenOrientation="portrait" android:theme="@style/PhotoGraphTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.transsnet.palmpay.action.PHOTO_PICKER_CROP"/>
+                <action android:name="com.transsnet.palmpay.action.PHOTO_PICKER_ONLY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:name="com.transsnet.palmpay.photograph.crop.PhotoCropActivity" android:screenOrientation="portrait" android:theme="@style/PhotoGraphTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:name="com.transsnet.palmpay.photograph.PhotoViewerActivity" android:screenOrientation="portrait" android:theme="@style/PhotoGraphTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:name="com.transsnet.palmpay.share.ShareChooseActivity" android:theme="@style/ShareDialogTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode" android:exported="false" android:name="com.transsnet.mtn.sdk.ui.bank._common.TermsAndPrivacyActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode" android:exported="false" android:name="com.transsnet.mtn.sdk.ui.bank._common.SelectBankActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode" android:exported="false" android:name="com.transsnet.mtn.sdk.ui.bank._common.LoginSuccessActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode" android:exported="false" android:name="com.transsnet.mtn.sdk.ui.bank.MTN_NG.LoginActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode" android:exported="false" android:name="com.transsnet.mtn.sdk.ui.bank.MTN_NG.VerificationActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode" android:exported="false" android:name="com.transsnet.mtn.sdk.ui.bank.MTN.LoginActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode" android:exported="false" android:name="com.transsnet.mtn.sdk.ui.bank.MTN.VerificationActivity" android:theme="@style/BaseTheme.NoActionBar"/>
+        <provider android:authorities="com.transsnet.palmpay.luckProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.luck.picture.lib.basic.PictureFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ps_file_paths"/>
+        </provider>
+        <service android:enabled="true" android:foregroundServiceType="location" android:name="com.luck.picture.lib.service.ForegroundService"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity" android:theme="@style/Base.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity" android:theme="@style/Picture.Theme.Translucent"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:label="" android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" android:theme="@style/EasyPermissions.Transparent"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:name="com.luck.lib.camerax.PictureCameraActivity" android:theme="@style/Base.Theme.NoActionBar"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <provider android:authorities="com.transsnet.palmpay.drouter.init.provider" android:exported="false" android:multiprocess="true" android:name="com.didi.drouter.store.LoadProvider"/>
+        <service android:name="com.snail.antifake.jni.EmulatorCheckService" android:process=":EmulatorCheckService"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <provider android:authorities="com.transsnet.palmpay.EventDataContentProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.growingio.android.database.EventDataContentProvider"/>
+        <provider android:authorities="com.transsnet.palmpay.adjust-lifecycle-provider" android:exported="false" android:name="com.adjust.sdk.SystemLifecycleContentProvider"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>
